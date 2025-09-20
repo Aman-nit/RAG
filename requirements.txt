@@ -1,0 +1,10 @@
+langchain
+langchain-core
+langchain-community 
+pinecone-client
+Sentence-Transformers
+PyPDF2
+FastAPI
+pydantic
+gradio
+groq

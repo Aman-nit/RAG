@@ -1,0 +1,80 @@
+/* App Background */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe, #f3e8ff);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  padding: 40px 20px;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.switch-btn {
+  background: white;
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.switch-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.switch-btn.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hint-text {
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;
+}
